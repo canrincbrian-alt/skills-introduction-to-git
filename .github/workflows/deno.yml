@@ -1,0 +1,9 @@
+name: Mi Primer Action
+on: [push] # <-- El evento: Cuando subas código
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest # <-- Dónde se ejecuta (en una compu virtual de GitHub)
+    steps:
+      - name: Decir hola
+        run: echo "¡Hola! Estoy automatizando tareas gracias a GitHub Actions"
